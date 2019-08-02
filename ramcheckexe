@@ -1,0 +1,16 @@
+a<-memory.size(TRUE)
+shallyou<-function(a){
+  if(a > 142.25){
+    print("Nice RAM & CPU. Go with it")
+  } else if (a < 142.25){
+    print("Small RAM. You may have troubles")
+  } else {
+    print ("Enough RAM")
+  }
+}
+mydata<-shallyou(a)
+write.table(mydata, "C:/Users/U6049382/OneDrive/Estadística UOC/mydata.txt")
+
+#memory.size(TRUE) #142.25 maximum amount of memory obtained from the OS
+#memory.size(FALSE) #125.71 amount currently in use
+#R language
